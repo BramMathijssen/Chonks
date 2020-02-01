@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
 import '../styles/App.scss'
-import {
-    Route,
-    NavLink,
-    HashRouter
-} from "react-router-dom"
 
 
 function navigation() {
