@@ -1,0 +1,43 @@
+@import "./colors.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-nav {
+  padding-top: 25px;
+  width: 100%;
+  position: sticky;
+  color: white;
+}
+
+.header-section {
+  background-color: black;
+  background-image: url("../assets/background-image-white.png");
+  background-size: cover;
+  height: 100vh;
+
+  h1 {
+    color: white;
+    font-size: 100px;
+  }
+
+  h2 {
+    -webkit-text-stroke: 2px white;
+    font-size: 100px;
+  }
+}
+
+.content-section-one {
+  background-color: $background;
+  color: white;
+}
