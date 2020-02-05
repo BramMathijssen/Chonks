@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Navigation from './navigation/navigation'
+import Navigation from '../components/navigation'
+import * as THREE from "three";
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <main className="main">
         <header className="header-section">
           <Navigation></Navigation>
           <div className="header-content">
@@ -13,9 +13,10 @@ class Home extends Component {
             <h2>CHONKERS</h2>
           </div>
         </header>
-        <div className="content-section-one">
-          <h2>Home</h2>
-        </div>
+        <main className="main">
+          <div className="content-section-one">
+            <h2>Home</h2>
+          </div>
         </main>
       </React.Fragment>
     );

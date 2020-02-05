@@ -14,6 +14,7 @@
   //glitch
   .nav-logo {
     font-weight: 500;
+    background-color: black;
     font-size: 32px;
     position: relative;
     @include textGlitch("example-one", 50, white, black, red, blue, 450, 115);

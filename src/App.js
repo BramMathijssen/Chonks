@@ -10,9 +10,10 @@ import {
   }
   from "react-router-dom";
 
-import Home from './Home.js'
-import Chonks from './Chonks.js'
-import PageNotFound from './PageNotFound'
+import Home from './pages/Home.js'
+import Chonks from './pages/Chonks.js'
+import Scene from './components/scene.js'
+import PageNotFound from './pages/PageNotFound'
 
 
  function App() {
@@ -25,6 +26,9 @@ import PageNotFound from './PageNotFound'
         </Route>
         <Route path = "/chonkers">
           <Chonks />
+        </Route>
+        <Route path = "/scene">
+          <Scene />
         </Route>
         <Route path="/404">
           <PageNotFound />
