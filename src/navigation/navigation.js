@@ -5,7 +5,7 @@ import '../styles/App.scss'
 function navigation() {
     return (
         <div className = "main-nav">
-            <header className = "nav-logo">chonks.</header>
+            <header className = "nav-logo" data-text="chonks.">chonks.</header>
         </div>
     )
 }

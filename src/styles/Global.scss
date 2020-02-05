@@ -1,16 +1,8 @@
 @import "./colors.scss";
+@import "./glitch-effect.scss";
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: black;
-}
-
-main {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .main-nav {
@@ -18,22 +10,66 @@ main {
   width: 100%;
   position: sticky;
   color: white;
+
+  //glitch
+  .nav-logo {
+    font-weight: 500;
+    font-size: 32px;
+    position: relative;
+    @include textGlitch("example-one", 50, white, black, red, blue, 450, 115);
+  }
 }
 
 .header-section {
-  background-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
   background-image: url("../assets/background-image-white.png");
   background-size: cover;
   height: 100vh;
 
-  h1 {
-    color: white;
-    font-size: 100px;
-  }
+  .header-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  h2 {
-    -webkit-text-stroke: 2px white;
-    font-size: 100px;
+    h1 {
+      color: white;
+      font-size: 100px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    h2 {
+      -webkit-text-stroke: 2px white;
+      font-size: 100px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 60px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      h2 {
+        font-size: 40px;
+      }
+    }
   }
 }
 
